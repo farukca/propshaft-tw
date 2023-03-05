@@ -2,9 +2,9 @@
 
 <%= render @company %>
 
-<div>
-  <%= link_to "Edit this company", edit_company_path(@company) %> |
-  <%= link_to "Back to companies", companies_path %>
-
-  <%= button_to "Destroy this company", @company, method: :delete %>
+<div class="flex space-x-4 mb-6 text-sm font-medium">
+  <div class="flex-auto flex space-x-4">
+    <%= link_to "Edit this company", edit_company_path(@company), class: "h-10 px-6 font-semibold rounded-md bg-black text-white" %>
+    <%= link_to "Back to companies", companies_path, class: "h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" %>
+  </div>
 </div>
